@@ -1,0 +1,38 @@
+# generate svg github action
+on:
+  push:
+    branches:
+      - 'icona-update-**' # only run workflow when icona-update-* branch is updated
+    paths:
+      - '.icona/**' # watch all files under .icona directory
+
+name: Generate files from changed json
+
+jobs:
+  deploy:
+    name: Generate files from changed json
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8.10.2
+
+      - name: Install Packages
+        run: |
+          pnpm install
+
+      - name: Generate Stuffs
+        run: |
+          pnpm generate:icona
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Action"
+          git add .
+          git commit -m "[Icona] Generate Files"
+          git push
