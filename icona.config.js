@@ -7,8 +7,16 @@ import { generate } from "@icona/generator";
         // Get modified files from the latest commit in a push event
         const modifiedFiles = github.context.payload.head_commit?.modified || [];
         core.info('Modified files: ' + modifiedFiles.join(', '));
+        
+        // Log the full context for debugging
+        core.info('Full context payload: ' + JSON.stringify(github.context.payload, null, 2));
+        
         // Filter for .icona/*.json files
-        const iconaJsonFiles = modifiedFiles.filter(f => f.startsWith('.icona/') && f.endsWith('.json'));
+        const iconaJsonFiles = modifiedFiles.filter(f => {
+            const isIconaFile = f.startsWith('.icona/') && f.endsWith('.json');
+            core.info(`Checking file: ${f}, isIconaFile: ${isIconaFile}`);
+            return isIconaFile;
+        });
 
         if (iconaJsonFiles.length === 0) {
             core.notice('No .icona/*.json files changed.');
