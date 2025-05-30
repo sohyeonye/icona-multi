@@ -6,6 +6,7 @@ import { generate } from "@icona/generator";
     try {
         // Get modified files from the latest commit in a push event
         const modifiedFiles = github.context.payload.head_commit?.modified || [];
+        core.info('Modified files: ' + modifiedFiles.join(', '));
         // Filter for .icona/*.json files
         const iconaJsonFiles = modifiedFiles.filter(f => f.startsWith('.icona/') && f.endsWith('.json'));
 
