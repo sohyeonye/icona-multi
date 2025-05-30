@@ -1,0 +1,13 @@
+{
+  "ic_star_v2": {
+    "svg": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g id=\"ic_star_v2\">\n<g id=\"ic_star_v2_2\">\n<g id=\"ic_star\">\n<mask id=\"mask0_4425_693\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"6\" y=\"7\" width=\"36\" height=\"34\">\n<path id=\"ic_star_2\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M24.4273 35.8618C24.1582 35.7224 23.8418 35.7224 23.5727 35.8618L13.8555 40.8934C13.1489 41.2593 12.3437 40.6298 12.4844 39.8215L14.3138 29.3164C14.3723 28.9802 14.2616 28.6362 14.0203 28.4045L6.30992 21.0021C5.714 20.43 6.02645 19.3941 6.82962 19.2792L17.5809 17.7405C17.8888 17.6964 18.1571 17.4999 18.3008 17.2131L23.1495 7.53669C23.5081 6.8211 24.4919 6.8211 24.8505 7.53669L29.6992 17.2131C29.8429 17.4999 30.1112 17.6964 30.4191 17.7405L41.1704 19.2792C41.9735 19.3941 42.286 20.43 41.6901 21.0021L33.9797 28.4045C33.7384 28.6362 33.6277 28.9802 33.6862 29.3164L35.5156 39.8215C35.6563 40.6298 34.8512 41.2593 34.1445 40.8934L24.4273 35.8618Z\" fill=\"#FFCE00\"/>\n</mask>\n<g mask=\"url(#mask0_4425_693)\">\n<rect id=\"&#240;&#159;&#142;&#168; tint\" width=\"48\" height=\"48\" fill=\"#FFCB2E\"/>\n</g>\n</g>\n</g>\n</g>\n</svg>\n",
+    "metadatas": [],
+    "name": "ic_star_v2",
+    "png": {
+      "1x": "iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJSSURBVHgB7ZjRbdswEIb/kzWAs4E9QGMFaAL0LR6hG7gTFJ0g6QbtBE0nSd8K2A+WukC1QfweW5cjk9gJItokRcp54AcYJqQTdf+deDwJSCQSicR7heen/3kxuUVEMkSC5x9mIIxkdMmL4hKRiCYAoKvdmK8QiSgCdtHfHomWhUgZoJaIx8lCcAFvo789EyULETJAeyIdPgtBBZijv7UInoXAGSCLCIfNQjABh6O/tQyaBUJHeFmMsBbHufllJ0DftQZnX5CjpLNyhQ5YCdBO3mMowwKDZgKmIVjG4JEcG6IbIoBq+ZcfVyKs1gItxRkFSB/zFUSzQE768iSO/9D5v29tBmYBi9M7HM/x1xDV9LEat50yL2LOptARODa0QkOfTWeNAuiiLLUI1s/ncZDIy/2n2heTyYEpwH9lAQ/4FqTXQn8o5wfi/FlZ7zWDBb2LsHRem8KS3kQ4OK/N4UB0EY7O60vgSDQRHs7ry+CBFpE3S4TaJzydV3g1c/RJ3YhKhGLDlY/zig7dKBcIxQATeOL3CC2LIdbNHUKSZyc+nalfBtYIF/2Oc3o+Qk14AZ5z+gmwfXHpYU4/AUyWi046Sdtm0HrO13g+QocqEKnF+J3OqxO6kD5evT4eFOJX1dx34r0VSDnOP6Wi/GirKDwvZvqrhGkXz7Ox637gnoHWavEYceQ0lle/a1M5lL7+Bhuaatu2jGzcK1EOZ15Wi+eIk0S8sqrhj7s4rqUduUHOMxnvvhNxM4Ij7hngbGUb8X0oIeparDNZI/i9mzuRSCQSPfIAdNPyJb9dGmwAAAAASUVORK5CYII=",
+      "2x": "",
+      "3x": "",
+      "4x": ""
+    }
+  }
+}
