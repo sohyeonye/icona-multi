@@ -9,7 +9,7 @@ import { generate } from "@icona/generator";
         core.info('Commit message: ' + commitMessage);
 
         // Extract file path from commit message
-        const match = commitMessage.match(/update (\.\/icona\/[^ ]+)/i);
+        const match = commitMessage.match(/Update (\.\/icona\/[^ ]+)/i);
         if (!match) {
             core.notice('No .icona/*.json file found in commit message');
             return;
@@ -19,10 +19,24 @@ import { generate } from "@icona/generator";
         core.info('Found file path: ' + filePath);
 
         // Extract base name (e.g., ./icona/hello.json -> hello)
-        const fileName = filePath.replace('./icona/', '').replace('.json', '');
-        core.info('Extracted file name: ' + fileName);
+        const serviceName = filePath.replace('./icona/', '').replace('.json', '');
+        core.info('Extracted service name: ' + serviceName);
 
-        // You can use fileName variable as needed
+        generate({
+            config: {
+              svg: {
+                genMode: "recreate", 
+                active: true, 
+                path: serviceName, 
+                svgoConfig: {},
+              },
+              png: {
+                genMode: "recreate", 
+                active: true, 
+                path: serviceName,
+              }
+            },
+          });
 
     } catch (e) {
         core.setFailed(e.message);
