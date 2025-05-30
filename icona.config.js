@@ -32,10 +32,11 @@ import { generate } from "@icona/generator";
               },
               png: {
                 genMode: "recreate", 
-                active: true, 
-                path: serviceName,
+                active: true,
+                path: serviceName, // will generate png files in png folder
               }
             },
+            icons: `./icona/${serviceName}.json` // Pass the dynamic JSON file path
           });
 
     } catch (e) {
