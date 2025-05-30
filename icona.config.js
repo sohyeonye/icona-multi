@@ -36,7 +36,7 @@ import { generate } from "@icona/generator";
                 path: serviceName, // will generate png files in png folder
               }
             },
-            icons: `./icona/${serviceName}.json` // Pass the dynamic JSON file path
+            icons: `./.icona/${serviceName}.json` 
           });
 
     } catch (e) {
