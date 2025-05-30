@@ -4,30 +4,25 @@ import { generate } from "@icona/generator";
 
 (async () => {
     try {
-        // Get modified files from the latest commit in a push event
-        const modifiedFiles = github.context.payload.head_commit?.modified || [];
-        core.info('Modified files: ' + modifiedFiles.join(', '));
-        
-        // Log the full context for debugging
-        core.info('Full context payload: ' + JSON.stringify(github.context.payload, null, 2));
-        
-        // Filter for .icona/*.json files
-        const iconaJsonFiles = modifiedFiles.filter(f => {
-            const isIconaFile = f.startsWith('.icona/') && f.endsWith('.json');
-            core.info(`Checking file: ${f}, isIconaFile: ${isIconaFile}`);
-            return isIconaFile;
-        });
+        // Get commit message from the latest commit
+        const commitMessage = github.context.payload.head_commit?.message || '';
+        core.info('Commit message: ' + commitMessage);
 
-        if (iconaJsonFiles.length === 0) {
-            core.notice('No .icona/*.json files changed.');
+        // Extract file path from commit message
+        const match = commitMessage.match(/update (\.\/icona\/[^ ]+)/i);
+        if (!match) {
+            core.notice('No .icona/*.json file found in commit message');
             return;
         }
 
-        // Extract base names (e.g., .icona/icons.json -> icons)
-        const fileNames = iconaJsonFiles.map(f => f.replace('.icona/', '').replace('.json', ''));
+        const filePath = match[1];
+        core.info('Found file path: ' + filePath);
 
-        core.info('Changed icon files: ' + fileNames.join(', '));
-        // You can use fileNames array as needed
+        // Extract base name (e.g., ./icona/hello.json -> hello)
+        const fileName = filePath.replace('./icona/', '').replace('.json', '');
+        core.info('Extracted file name: ' + fileName);
+
+        // You can use fileName variable as needed
 
     } catch (e) {
         core.setFailed(e.message);
