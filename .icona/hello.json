@@ -1,0 +1,13 @@
+{
+  "ic_chevron_down_v2": {
+    "svg": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g id=\"ic_chevron_down_v2\">\n<g id=\"ic_chevron_down_v2_2\">\n<g id=\"ic_chevron_down\">\n<mask id=\"mask0_4422_687\" style=\"mask-type:alpha\" maskUnits=\"userSpaceOnUse\" x=\"2\" y=\"7\" width=\"20\" height=\"12\">\n<path id=\"ic_chevron_down_2\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M20.7778 8.22221C21.2074 8.65178 21.2074 9.34827 20.7778 9.77784L12.7778 17.7778C12.3483 18.2074 11.6518 18.2074 11.2222 17.7778L3.22221 9.77785C2.79263 9.34827 2.79263 8.65179 3.22221 8.22221C3.65178 7.79263 4.34826 7.79263 4.77784 8.22221L12 15.4444L19.2222 8.22221C19.6518 7.79263 20.3483 7.79263 20.7778 8.22221Z\" fill=\"#333333\"/>\n</mask>\n<g mask=\"url(#mask0_4422_687)\">\n<rect id=\"&#240;&#159;&#142;&#168; tint\" width=\"24\" height=\"24\" fill=\"#333333\"/>\n</g>\n</g>\n</g>\n</g>\n</svg>\n",
+    "metadatas": [],
+    "name": "ic_chevron_down_v2",
+    "png": {
+      "1x": "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACzSURBVHgB7ZNBDoMgEEXHEvY9gkegYcMST94tS25QjtA9ISljxVCCONaVCX/jOOG/pyYC9PRcK1rrO5xIrT/kN1LKF14555MxxsGBKKVG7/0T5xDCw1r7xvmWDgghkn0+iAUiO4fPnQT/EeAymqc4uiOSAu4WxpqhLMQ3GRlja6H1uWrw+KCuKaBKKPBNwZ6ECm8KtiS4p8J3BTXJsibBSYKKBKhwsqCQABX+V7Ifsqfnmw8ASZM9gfaDgwAAAABJRU5ErkJggg==",
+      "2x": "",
+      "3x": "",
+      "4x": ""
+    }
+  }
+}
